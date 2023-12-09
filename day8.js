@@ -50,3 +50,6 @@ const lcm = (a, b) => a * b / gcd(a, b);
 var LCM = pathLengths.reduce(lcm);
 
 console.log("Part 2: " + LCM);
+
+//All of the paths loop starting at step 1. They have no path before the loop. They all reach a different end and do not traverse multiple ends. This is a special case where they all sync at the least common multiple of the loop lengths.
+//This solution fails outside of inputs with this condition. 
