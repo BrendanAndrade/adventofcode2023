@@ -56,11 +56,11 @@ emptyY.reverse().forEach(y => {
     })
 })
 
-var part1 = galaxies.reduce((acc, galaxy, i)=>{
+var part2 = galaxies.reduce((acc, galaxy, i)=>{
     for(var j = i+1; j < galaxies.length; j++){
         acc = acc + Math.abs(galaxies[j][0] - galaxy[0]) + Math.abs(galaxies[j][1]-galaxy[1]);
     }
     return acc
 },0)
 
-console.log("Part 1: " + part1);
+console.log("Part 2: " + part2);
